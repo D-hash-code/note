@@ -50,5 +50,35 @@ use `kubectl get pods` to monitor and use `minikube service ghost` to access gho
 
 # From Chapter 2: creating a kubernetes cluster in kubernetes cookbook
 
+- install kubeadm on all the servers that will be part of your kubernetes cluster -- master and other nodes. For Ubuntu, that looks like
+
+```bash
+# apt-get update && apt-get install -y apt-transport-https
+
+# curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+
+# cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
+  deb http://apt.kubernetes.io/ kubernetes-xenial main
+  EOF
+
+# apt-get update
+```
+
+Then install these
+
+```bash
+# apt-get install -y docker.io
+# apt-get install -y kubelet kubeadm kubectl kubernetes-cni
+```
+
+- initialise cluster with `kubeadm init`
+- after initialising cluster on the master node, collect the token and join the other nodes by running this on the node terminals: `kubeadmin join --token <token>`
+- on the master node terminal you can run: `kubectl get nodes` to see results
+- finally it is required to create a network that satisfies 
+
+
+
+
+
 
 
