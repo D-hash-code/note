@@ -1,7 +1,7 @@
 ### Resources
 
 - Good blog from [dgraph](https://dgraph.io/blog/)
-
+- https://dgraph.io/tour/
 
 [What is GraphQL?](https://dgraph.io/blog/post/what-is-gql/):  
 - mutations instead of put/post
