@@ -1,6 +1,7 @@
 ## Links to resources
 
 - https://github.com/k8s-cookbook/recipes
+- https://kubernetes.io/training/
 
 # From Chapter 1: getting started with Kubernetes in kubernetes cookbook
 
